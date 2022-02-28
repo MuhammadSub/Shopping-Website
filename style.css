@@ -1,0 +1,843 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol{
+    padding: 0;
+    margin: 0;
+}
+
+
+.header-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background: transparent;
+    padding: 21px 40px 0 24px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    transition: all ease 1s;
+
+    
+}
+
+
+
+body{
+    font-family: 'Oswald',sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+    height: 2000px;
+   
+   
+}
+
+
+
+#header{
+    position: absolute;
+    width: 100%;
+}
+
+.header-1.fixedbar{
+    position: fixed !important;
+    background: deepskyblue;
+    padding: 10px 40px 0 24px;
+}
+ 
+ 
+
+.logo{
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    text-align: left;
+    padding: 0 0 25px;
+
+}
+
+.logo a{
+    max-width: 100%;
+    height: auto;
+	color: white;
+	margin-left: 40px;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+
+.mainmenu{
+    position: relative;
+}
+
+.mainmenu ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+.mainmenu ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 0.8;
+    padding: 25px 20px 18px;
+    position: relative;
+}
+
+
+
+.mainmenu ul li a{
+    display: block;
+    color: white;
+    font-size: 17px;
+    line-height: 0.8;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+
+
+
+.mainmenu ul li a:after{
+    position: absolute;
+    width: 0;
+    height: 1px;
+    content: '';
+    background: white;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    transition: all 0.4s ease-out;
+}
+
+
+.mainmenu ul li a:hover{
+    color: white;
+}
+
+
+
+.mainmenu ul li a:hover:after{
+    width: 100%;
+}
+
+
+.navigator{
+    position: relative;
+    padding: 21px 0 12px;
+}
+
+.navigator a{
+    display: inline-block;
+    color: white;
+    line-height: 0.8;
+    font-size: 25px;
+    margin: 0;
+}
+
+
+
+.navigator a.search{
+    margin-top: 5px;
+}
+
+.fixedHeader {
+    background: #000;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);     
+}
+ 
+ 
+ 
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-size: cover;
+    overflow: hidden;
+   
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight:bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover{
+    background-color: rgba(0,0,0,0.9);
+}
+.myslides{
+	max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-size: cover;
+    height: 700px;
+    overflow: hidden;
+}
+
+.myslides .p_detail{
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    z-index: 30;
+}
+.myslides .p_detail h3{
+    font-size: 50px;
+    font-weight: 600;
+    font-size: italic;
+    margin-top: 105px;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft
+}
+.myslides .p_detail .cta-div{
+    margin-top: 30px;
+     }
+.myslides .p_detail .cta-div .btn1{
+    padding: 13px 25px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: -6px;
+    
+}
+.myslides .p_detail .cta-div .btn1:hover
+{
+    text-decoration: none;
+    color: white;
+    background-color: deepskyblue;
+    border-color: deepskyblue;  
+}
+.myslides .p_detail .cta-div .btn2
+{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right:10px;
+}
+.myslides .p_detail .cta-div .btn2:hover
+{
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+    
+}
+
+.services
+{
+    margin-top: 40px;
+}
+.services h2{
+	color:#363535;
+	margin-bottom: 40px;
+}
+.services-wrap
+{  
+    box-shadow: 0px 3px 10px rgba(0,0,0,.1);
+}
+
+.product-img
+{
+    position: relative;
+	margin-bottom: 50px;
+}
+
+.product-img:before
+{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content:"";
+    opacity: 0;
+    transform: scale(.8);
+    transition: all 0.5s; 
+    
+}
+.shop
+{
+    background: transparent;
+    height: 70px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 10px;
+	Left: 32%;
+   
+}
+.shop a
+{
+    font-size: 14px;
+    background-color: #34495e;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.5s  ease-in;
+}
+.shop a:hover
+{
+    font-size: 14px;
+    border: 1px solid white;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+    margin-right: 0;
+    text-decoration: none; 
+}
+.services .loadbtn{
+    padding: 13px 25px;
+	margin-bottom: 30px;
+    background-color: black;
+    color: #05878a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+}
+.services .loadbtn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #05878a;
+    border-color: #05878a;   
+}
+
+
+.service-area2{
+    margin-top: 40px;
+	margin-bottom: 30px;
+}
+.short-about {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 40px 40px 58px 40px ;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+	margin: 0px -30px 30px -30px ;
+}
+.short-about h3{
+    font-size: 28px;
+	color: #413E3E;
+    font-weight: 700;
+    padding-bottom: 13px;
+    position: relative;
+}
+.short-about p
+{
+    font-size: 13px;
+	color: #8C8788;
+    margin-bottom: 30px;
+}
+.short-about .ambtn{
+    padding: 13px 18px;
+	margin-bottom: 30px;
+    background-color: black;
+    color: #05878a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+}
+.short-about .ambtn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #05878a;
+    border-color: #05878a;   
+}
+
+
+.team{
+	
+}
+.team h2{
+	color: #2F2E2E;
+}
+.team p{
+	color: #676464;
+	font-size: 14px;
+}
+.team-member
+{
+    margin-top: 30px;
+}
+ 
+.team-member-info
+{
+    padding: 10px 0 30px 0;
+}
+h4.team-member-name
+{
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+h4.team-member-designation
+{
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-style: italic;   
+}
+.social-list
+{
+    padding-left: 0;
+}
+.social-list li
+{
+ list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.social-list i
+{
+    font-size: 17px;
+}
+.icon-gray i
+{
+    color: #64707b;      
+}
+  
+
+.faq {
+	margin-bottom: 40px;
+}
+.faq .title h2{
+	color: #242323;
+}
+.faq .title p{
+	color: #343333;
+	font-size: 14px;
+}
+#accordian .panel
+{
+   box-shadow: none;
+   border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  
+}
+
+#accordian .panel-heading
+{
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+
+#accordian .panel-title a
+{
+    display: block;
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background: #34495e;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+
+#accordian .panel-title a:after,
+#accordian .panel-title a.collapsed:after
+{
+    content: "\f068";
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: #34495e;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: 5px solid white;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+ 
+}
+
+#accordian .panel-title a.collapsed:after
+{
+    content: "\f067";
+}
+
+
+#accordian .panel-title a:hover:after,
+#accordian .panel-title a.collapsed:hover:after 
+{
+    transform: rotate(360deg);
+}
+
+
+#accordian .panel-body
+{
+    padding: 15px 25px;
+    background-color: #ebebeb;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+       
+    
+}
+
+.panel-heading a
+{
+    text-decoration: none !important;
+    font-size: 15px !important;
+    font-weight: normal;
+}
+
+
+
+.vision{
+    background-image: url("..//image/shoes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+	margin-top: 30px;
+}
+.overlay-vision{
+	background: rgba(72, 209, 204, 0.3);
+	padding-bottom: 150px;
+	margin-left: -30px;
+	margin-right: -30px
+}
+.vision h2{
+	padding-top: 80px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.vision .bbbtn{
+    padding: 13px 18px;
+	margin-bottom: 30px;
+    background-color: black;
+    color: #05878a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+}
+.vision .bbbtn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #05878a;
+    border-color: #05878a;   
+}
+/*--BUILD THE BEST – BE THE BEST--*/
+
+.contact-area
+{
+    margin-top: 60px;
+	color: black;
+}
+
+
+.form-control
+{
+    border-radius: 0px !important;
+    border: 1px solid #34495e !important;
+    
+}
+
+
+.contact-form button.btn
+{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 1px solid #34495e;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right:10px;
+}
+.contact-form button.btn:hover
+{
+    text-decoration: none;
+    color: white;
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+    
+}
+
+.border-bottom-now
+{
+    width: 40px;
+    height: 2px;
+    background: black;
+    margin: 0 auto;
+}
+
+.contact-infos
+{
+    float: left;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: -30px;
+    background: deepskyblue;
+    padding-top: 35px;
+    padding-bottom: 35px;
+ 
+    
+}
+
+.contact-infos .fa
+{
+    color: white;
+    font-size: 26px;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    
+}
+
+.contact-infos p
+{
+    color: white;
+    margin-top: 15px;
+    
+}
+
+.maps
+{
+    margin-top: 20px;
+}
+
+
+.footer{
+    font-size: 1rem;
+    font-family: 'Roboto Condensed',sans-serif;
+    background-color: #363333;
+	padding-bottom: 15px;
+}
+
+.col-heading{
+    text-transform: uppercase;
+    font-family: 'Oswald',sans-serif;
+    margin-bottom: 12px;
+	color: white;    
+}
+
+.mb-2{
+    margin-bottom: 0.5rem !important;
+}
+
+.footer ul li a{
+    font-size: 12px;
+    color: white;
+}
+.footer .copywrite p{
+	font-size: 12px;
+	padding-bottom: 30px;
+}
+
+
+.download-area h3{
+    font-family: 'Oswald',sans-serif;
+}
+
+
+#back2Top{
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    background-color: #00c9db;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-radius: 4px;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
